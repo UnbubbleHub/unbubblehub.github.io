@@ -3,46 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unbubble Hub — open research on information bubbles</title>
-  <meta name="description" content="The open-research arm of the Unbubble mission. Tools, data, and research fighting social polarization and information bubbles.">
+  <title>Unbubble Hub — Open Research Initiative</title>
+  <meta name="description" content="We aim to provide a space for researcher and engineer to come together and collaborate in developing tools to fight social polarization.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Unbubble Hub</h1>
-      <p class="tagline">Open research fighting social polarization and information bubbles. The open-source arm of the <a href="https://unbubble.news">Unbubble</a> mission.</p>
-    </header>
+<main class="wrap">
 
-    <section>
-      <h2>Projects</h2>
-      <ul class="cards">
-        <li>
-          <a class="title" href="https://sources.unbubblehub.org">Sources</a>
-          <p>Takes a news event, returns diverse sources with perspective annotations and MMR diversity ranking.</p>
-          <div class="meta"><a href="https://github.com/UnbubbleHub/sources">Repository</a></div>
-        </li>
-        <li>
-          <a class="title" href="https://gdelt-pulse.unbubblehub.org">GDELT Pulse</a>
-          <p>Ingests GDELT data, clusters articles into events, exposes a hybrid search API and dashboard.</p>
-          <div class="meta"><a href="https://github.com/UnbubbleHub/gdelt-pulse">Repository</a></div>
-        </li>
-      </ul>
-    </section>
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="brand">
+      <div class="brand-name">Unbubble <em>Hub</em></div>
+    </div>
 
-    <section>
-      <h2>Writing</h2>
-      <p class="muted">Latest posts from <a href="https://unbubblehub.substack.com">our Substack</a>.</p>
-      <!--POSTS-->
-    </section>
+    <h1 class="lede">An Open Research Initiative To Foster Information Integrity</h1>
+    <p class="mission">We aim to provide a space for researcher and engineer to come together and collaborate in developing tools to fight social polarization.</p>
+    <p class="mission">We want to help people form their own judgment not by promoting “correct” opinions, but by fostering meaningful, conscious disagreement, encouraging a plurality of perspectives.</p>
+    <p class="mission">In order to do so, we believe that information integrity tools should be open, transparent, and accessible to everyone.</p>
+  </header>
 
-    <footer>
-      <p>
-        <a href="https://github.com/UnbubbleHub">GitHub</a> ·
-        <a href="https://unbubblehub.substack.com">Substack</a>
-      </p>
-      <p class="muted small">Code AGPL v3 · Content CC BY 4.0</p>
-    </footer>
-  </main>
+  <!-- ============ JOIN / CTA ============ -->
+  <aside class="join">
+    <p class="join-label">Get involved</p>
+    <h3>Come build with us.</h3>
+    <p>Contribute code, open an issue, bring a dataset, or just follow along.</p>
+    <div class="cta-row">
+      <a class="btn" href="https://github.com/UnbubbleHub">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+      <a class="btn ghost" href="https://unbubblehub.substack.com">
+        <img src="./assets/substack.png" alt="Substack" width="16" height="16">
+        Subscribe on Substack
+      </a>
+    </div>
+  </aside>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section">
+    <p class="eyebrow">01 / Projects</p>
+    <h2 class="section-title">What we're building.</h2>
+    <p class="section-intro">Active tools in the open, more in the works. All code on GitHub, all data under permissive licenses.</p>
+
+    <ul class="list">
+      <li>
+        <div class="proj-head">
+          <a class="proj-title" href="https://sources.unbubblehub.org">Sources</a>
+          <span class="proj-status live">Live</span>
+        </div>
+        <p class="proj-desc">Takes a news event as input and returns sources, categorized and ranked, representing a range of diverse viewpoints as output.</p>
+        <div class="proj-meta">
+          <a href="https://sources.unbubblehub.org">sources.unbubblehub.org</a>
+          <span class="dot"></span>
+          <a href="https://github.com/UnbubbleHub/sources">Repository</a>
+        </div>
+      </li>
+
+      <li>
+        <div class="proj-head">
+          <a class="proj-title" href="https://gdelt-pulse.unbubblehub.org">GDELT Pulse</a>
+          <span class="proj-status alpha">Alpha</span>
+        </div>
+        <p class="proj-desc">Pulls GDELT's 15-minute data updates, extracts sources and annotations, and builds a searchable database of global news coverage.</p>
+        <div class="proj-meta">
+          <a href="https://gdelt-pulse.unbubblehub.org">gdelt-pulse.unbubblehub.org</a>
+          <span class="dot"></span>
+          <a href="https://github.com/UnbubbleHub/gdelt-pulse">Repository</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ WRITING ============ -->
+  <section class="section">
+    <p class="eyebrow">02 / Writing</p>
+    <h2 class="section-title">Notes from the lab.</h2>
+    <p class="section-intro">Short essays, project updates, and research notes. Latest posts from <a href="https://unbubblehub.substack.com">our Substack</a>.</p>
+
+    <!--POSTS-->
+
+    <p class="more-link">↗ <a href="https://unbubblehub.substack.com">Read everything on Substack</a></p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="links">
+      <a href="https://github.com/UnbubbleHub">GitHub</a>
+      <a href="https://unbubblehub.substack.com">Substack</a>
+    </div>
+    <div class="license">Code AGPL v3 · Content CC BY 4.0</div>
+  </footer>
+</main>
 </body>
 </html>

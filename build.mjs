@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile, cp } from 'node:fs/promises';
 
 const FEED_URL = 'https://unbubblehub.substack.com/feed';
 const MAX_POSTS = 5;
@@ -60,6 +60,7 @@ const html = template.replace('<!--POSTS-->', renderPosts(posts));
 await mkdir('dist', { recursive: true });
 await writeFile('dist/index.html', html);
 await copyFile('style.css', 'dist/style.css');
+await cp('assets', 'dist/assets', { recursive: true });
 await copyFile('CNAME', 'dist/CNAME');
 
 console.log(`Built dist/ with ${posts.length} post${posts.length === 1 ? '' : 's'}.`);
