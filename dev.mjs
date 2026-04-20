@@ -6,7 +6,7 @@ import { extname, join } from 'node:path';
 
 const PORT = 4321;
 const DIST = 'dist';
-const WATCHED = ['index.html', 'style.css', 'build.mjs'];
+const WATCHED = ['index.html', 'style.css', 'build.mjs', 'posts.json'];
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
