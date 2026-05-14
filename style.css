@@ -268,7 +268,7 @@ ul.list li {
   background: var(--paper);
 }
 .proj-status.live { color: #2c6b3a; border-color: #b9d7bd; background: #eaf3ec; }
-.proj-status.alpha { color: #8a5a14; border-color: #e1cfa5; background: #f5eed9; }
+.proj-status.beta { color: #8a5a14; border-color: #e1cfa5; background: #f5eed9; }
 
 .proj-desc {
   grid-column: 1 / -1;
